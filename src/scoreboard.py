@@ -1,13 +1,13 @@
 from turtle import Turtle
 
 ALIGNMENT = "center"
-FONT = ("Arial", 15, "normal")
+FONT = ("Courier", 15, "normal")
 class Scoreboard(Turtle):
     def __init__(self):
         super().__init__()
         self.score = 0
         self.penup()
-        self.goto(0, 275)
+        self.goto(0, 270)
         self.color("white")
         self.hideturtle()
 
