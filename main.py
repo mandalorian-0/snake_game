@@ -5,6 +5,7 @@ from src.snake import Snake
 from src.food import Food
 from src.scoreboard import Scoreboard
 
+LIMIT = 290
 
 # setup screen dimensions and color
 screen = t.Screen()
@@ -35,5 +36,10 @@ while game_is_on:
     if snake.head.distance(food) < 15:
         score.increase_score()
         food.refresh()
+
+    #Detect collision with wall
+    if snake.head.xcor() > LIMIT or snake.head.xcor() < -LIMIT or snake.head.ycor() > LIMIT or snake.head.ycor() < -LIMIT:
+        game_is_on = False
+        score.game_over()
 
 screen.mainloop()
