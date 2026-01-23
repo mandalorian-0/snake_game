@@ -6,6 +6,11 @@ single-player game where you control a snake, eat food to
 grow, and try not to hit the walls or your own tail!  This 
 game utilizes the Python `turtle` module for graphics.
 
+## Screenshots
+![Screenshot](./screenshots/start.png)
+![Screenshot](./screenshots/game.png)
+![Screenshot](./screenshots/game_over.png)
+
 ## Features
 
 *   Classic Snake gameplay
